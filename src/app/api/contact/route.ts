@@ -7,7 +7,7 @@ export async function POST(req: Request) {
     // Por ahora devolvemos éxito simulado.
     console.log("Contacto recibido:", data);
     return NextResponse.json({ ok: true });
-  } catch (e) {
+  } catch {
     return NextResponse.json({ ok: false }, { status: 400 });
   }
 }

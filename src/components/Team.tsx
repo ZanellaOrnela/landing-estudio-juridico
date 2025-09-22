@@ -1,4 +1,5 @@
 import SectionTransition from "./SectionTransition";
+import Image from "next/image";
 
 const TEAM = [
   { 
@@ -63,9 +64,11 @@ export default function Team() {
                 {/* Foto profesional - Protagonista */}
                 <div className="relative overflow-hidden">
                   <div className="aspect-square w-full">
-                    <img 
+                    <Image 
                       src={member.image} 
                       alt={`Foto de ${member.name}`}
+                      width={400}
+                      height={400}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     />
                   </div>

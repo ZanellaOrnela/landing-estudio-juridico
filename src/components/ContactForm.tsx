@@ -24,7 +24,7 @@ export default function ContactForm() {
       setStatus("success");
       setMessage("Gracias, te contactaremos a la brevedad.");
       (document.getElementById("contact-form") as HTMLFormElement)?.reset();
-    } catch (e) {
+    } catch {
       setStatus("error");
       setMessage("Hubo un error al enviar. Intenta nuevamente.");
     }
@@ -55,7 +55,11 @@ export default function ContactForm() {
             <form
               id="contact-form"
               className="grid gap-6"
-              action={async (formData) => onSubmit(formData)}
+              onSubmit={(e) => {
+                e.preventDefault();
+                const formData = new FormData(e.currentTarget);
+                onSubmit(formData);
+              }}
             >
               <div className="grid sm:grid-cols-2 gap-6">
                 <div className="space-y-2">

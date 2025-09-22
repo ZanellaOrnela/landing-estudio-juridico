@@ -62,8 +62,9 @@ export default function Testimonials() {
                 
                 {/* Quote */}
                 <blockquote className="text-base md:text-lg text-[#333333] font-lato leading-relaxed mb-6 relative flex-grow">
-                  <span className="text-4xl text-[#D96E48]/30 absolute -top-2 -left-2 font-serif">"</span>
+                  <span className="text-4xl text-[#D96E48]/30 absolute -top-2 -left-2 font-serif">&ldquo;</span>
                   {testimonial.quote}
+                  <span className="text-4xl text-[#D96E48]/30 absolute -bottom-2 -right-2 font-serif">&rdquo;</span>
                 </blockquote>
                 
                 {/* Author info */}
