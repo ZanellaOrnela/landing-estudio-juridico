@@ -1,5 +1,5 @@
-import Image from "next/image";
 import SectionTransition from "./SectionTransition";
+import Image from "next/image";
 
 export default function TrajectorySection() {
   return (
@@ -55,25 +55,14 @@ export default function TrajectorySection() {
               <div className="relative bg-gradient-to-br from-white to-[#f8f8f8] rounded-2xl p-12 shadow-lg">
                 {/* Logo principal */}
                 <div className="flex items-center justify-center">
-                  <div className="relative w-56 h-56 lg:w-64 lg:h-64 flex items-center justify-center">
-                    {/* Logo creado con CSS */}
-                    <div className="text-center space-y-4">
-                      <div className="w-32 h-32 lg:w-40 lg:h-40 bg-gradient-to-br from-[#D96E48] to-[#E47A34] rounded-2xl flex items-center justify-center shadow-xl mx-auto">
-                        <span className="text-white font-bold text-4xl lg:text-5xl font-montserrat">P&A</span>
-                      </div>
-                      <div className="space-y-2">
-                        <h3 className="text-xl lg:text-2xl font-bold text-[#333333] font-montserrat">
-                          Pérez & Asociados
-                        </h3>
-                        <p className="text-[#D96E48] font-lato text-sm lg:text-base font-semibold">
-                          Estudio Jurídico
-                        </p>
-                        <div className="flex items-center justify-center gap-2 mt-3">
-                          <div className="w-2 h-2 bg-[#D96E48] rounded-full"></div>
-                          <span className="text-[#666666] font-lato text-xs lg:text-sm">Fundado en 1983</span>
-                        </div>
-                      </div>
-                    </div>
+                  <div className="relative w-56 h-56 lg:w-64 lg:h-64 overflow-hidden">
+                    <Image
+                      src="/logo.png"
+                      alt="Pérez & Asociados Logo"
+                      fill
+                      className="object-contain"
+                      priority
+                    />
                   </div>
                 </div>
                 
