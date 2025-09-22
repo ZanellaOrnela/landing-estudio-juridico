@@ -1,4 +1,9 @@
+# Landing Page - Estudio Jurídico Pérez & Asociados
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+## Descripción
+Sitio web profesional para estudio jurídico con más de 40 años de experiencia. Incluye secciones de servicios, equipo profesional, testimonios y formulario de contacto.
 
 ## Getting Started
 
