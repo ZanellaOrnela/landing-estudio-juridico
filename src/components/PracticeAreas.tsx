@@ -68,7 +68,7 @@ export default function PracticeAreas() {
                 </p>
                 
                 <div className="flex items-center justify-between">
-                  <button className="bg-[#D96E48] text-white font-semibold text-sm px-6 py-3 rounded-full hover:bg-[#c85a3a] transition-all font-lato hover:shadow-lg transform hover:scale-105">
+                  <button suppressHydrationWarning className="bg-[#D96E48] text-white font-semibold text-sm px-6 py-3 rounded-full hover:bg-[#c85a3a] transition-all font-lato hover:shadow-lg transform hover:scale-105">
                     Consultar
                   </button>
                   <div className="w-12 h-12 bg-[#D96E48]/10 rounded-full flex items-center justify-center group-hover:bg-[#D96E48]/20 transition-colors">

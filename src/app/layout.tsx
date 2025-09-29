@@ -24,6 +24,11 @@ export const metadata: Metadata = {
   description:
     "Más de 40 años de trayectoria brindando soluciones legales con integridad y visión moderna. Asesoría confiable para un futuro seguro.",
   metadataBase: new URL("https://example.com"),
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
   openGraph: {
     title: "Pérez & Asociados | Soluciones Legales con Integridad",
     description:
@@ -48,6 +53,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
+      <head>
+        {/* Force favicon to use site logo, overriding default favicon.ico */}
+        <link rel="icon" href="/logo.png?v=2" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/logo.png?v=2" />
+        <link rel="apple-touch-icon" href="/logo.png?v=2" />
+      </head>
       <body
         className={`${montserrat.variable} ${lato.variable} antialiased`}
       >
