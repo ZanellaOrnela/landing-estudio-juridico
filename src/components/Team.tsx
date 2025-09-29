@@ -48,7 +48,7 @@ export default function Team() {
       
       <div className="relative max-w-content container-px mx-auto">
         <SectionTransition>
-          <div className="text-center mb-16 pt-8">
+          <div className="text-center mb-16 pt-24 sm:pt-28 md:pt-32">
             <p className="text-lg text-[#F5F5F5] font-lato max-w-3xl mx-auto leading-relaxed">
               Somos un estudio enfocado en brindar asesoramiento claro, efectivo y humano. 
               Nuestro equipo combina experiencia, actualización constante y un trato cercano 

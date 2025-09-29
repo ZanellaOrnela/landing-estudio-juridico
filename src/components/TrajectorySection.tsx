@@ -5,7 +5,7 @@ export default function TrajectorySection() {
   return (
     <section className="bg-[#efefef] relative overflow-hidden">
       
-      <div className="max-w-content container-px mx-auto pt-8 md:pt-12 lg:pt-16 pb-28 md:pb-32 lg:pb-36 relative z-10 px-6 sm:px-8 md:px-4">
+      <div className="max-w-content container-px mx-auto pt-8 md:pt-12 lg:pt-16 pb-28 sm:pb-36 md:pb-40 lg:pb-44 relative z-10 px-6 sm:px-8 md:px-4">
         <SectionTransition>
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Contenido principal */}
